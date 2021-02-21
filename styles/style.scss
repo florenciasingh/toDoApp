@@ -34,7 +34,7 @@ body {
     .main {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
         height: 85vh;
@@ -42,44 +42,42 @@ body {
         background-color: #fff9ec;
 
         .initialState {
-            font-size: 30px;
-            width: 50%;
-            min-height: fit-content;
-            margin-top: 2em;
+            width: 60%;
 
             h1 {
                 margin: 0;
                 color: #212529;
-
+                letter-spacing: 0;
+                font-size: 12vw;
             }
 
             i {
-                font-size: 2.5em;
+                font-size: 20vw;
                 padding: 0.4em;
-                color: #309397;
+                color: #212529;
             }
 
         }
 
         .addBtn {
-            font-size: 20px;
-            background-color: #309397;
+            background-color:#e46472;
             color: #fff9ec;
             width: fit-content;
             min-height: fit-content;
             border-radius: 15px;
             padding: 1.5em;
             box-sizing: border-box;
-            margin-bottom: 2.5em;
+            
 
             p {
+                font-size: 6vw;
                 margin: 0;
                 font-weight: 300;
             }
 
             i {
-                margin-top: 20px;
-                font-size: 2.5em;
+                padding-top: 0.5em;
+                font-size: 10vw;
             }
         }
 
@@ -89,26 +87,17 @@ body {
     footer {
         background-color: #f9be7c;
         text-align: center;
+        height: 5vh;
         
-    
+          p {
+              line-height: 0;
+          }
         
             a {
                 text-decoration: none;
             }
         
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

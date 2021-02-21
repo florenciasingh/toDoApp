@@ -43,9 +43,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -55,25 +54,21 @@ body {
     background-color: #fff9ec;
   }
   .main .initialState {
-    font-size: 30px;
-    width: 50%;
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-    margin-top: 2em;
+    width: 60%;
   }
   .main .initialState h1 {
     margin: 0;
     color: #212529;
+    letter-spacing: 0;
+    font-size: 12vw;
   }
   .main .initialState i {
-    font-size: 2.5em;
+    font-size: 20vw;
     padding: 0.4em;
-    color: #309397;
+    color: #212529;
   }
   .main .addBtn {
-    font-size: 20px;
-    background-color: #309397;
+    background-color: #e46472;
     color: #fff9ec;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -85,19 +80,23 @@ body {
     padding: 1.5em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-bottom: 2.5em;
   }
   .main .addBtn p {
+    font-size: 6vw;
     margin: 0;
     font-weight: 300;
   }
   .main .addBtn i {
-    margin-top: 20px;
-    font-size: 2.5em;
+    padding-top: 0.5em;
+    font-size: 10vw;
   }
   footer {
     background-color: #f9be7c;
     text-align: center;
+    height: 5vh;
+  }
+  footer p {
+    line-height: 0;
   }
   footer a {
     text-decoration: none;
