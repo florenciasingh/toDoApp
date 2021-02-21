@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media (min-width: 210px) and (max-width: 780px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    height: 10vh;
+    background-color: #f9be7c;
+  }
+  header i {
+    padding-left: 5vw;
+    font-size: 200%;
+    color: #e46472;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 85vh;
+    text-align: center;
+    background-color: #fff9ec;
+  }
+  .main .initialState {
+    font-size: 30px;
+    width: 50%;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    margin-top: 2em;
+  }
+  .main .initialState h1 {
+    margin: 0;
+    color: #212529;
+  }
+  .main .initialState i {
+    font-size: 2.5em;
+    padding: 0.4em;
+    color: #309397;
+  }
+  .main .addBtn {
+    font-size: 20px;
+    background-color: #309397;
+    color: #fff9ec;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    border-radius: 15px;
+    padding: 1.5em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 2.5em;
+  }
+  .main .addBtn p {
+    margin: 0;
+    font-weight: 300;
+  }
+  .main .addBtn i {
+    margin-top: 20px;
+    font-size: 2.5em;
+  }
+  footer {
+    background-color: #f9be7c;
+    text-align: center;
+  }
+  footer a {
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
