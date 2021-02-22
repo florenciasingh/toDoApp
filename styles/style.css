@@ -94,6 +94,60 @@ body {
   section .addBtn a {
     color: #e46472;
   }
+  .listContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    height: 85vh;
+    text-align: center;
+    background-color: #fff9ec;
+  }
+  .listContainer .list h1 {
+    margin: 0;
+    color: #212529;
+    letter-spacing: 0;
+    font-size: 10vw;
+    padding-left: 5vw;
+    padding-top: 2vh;
+  }
+  .listContainer .addBtn {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    color: #e46472;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    border-radius: 40px;
+    padding: 1.5em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .listContainer .addBtn p {
+    font-size: 5vw;
+    margin: 0;
+    font-weight: 300;
+  }
+  .listContainer .addBtn i {
+    padding-top: 0.3em;
+    font-size: 15vw;
+  }
+  .listContainer .addBtn a {
+    color: #e46472;
+  }
   .formSection {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -222,6 +276,10 @@ body {
     transition: all 0.3s ease;
     cursor: pointer;
     margin-top: 0.5rem;
+  }
+  .formSection #addTask a {
+    text-decoration: none;
+    color: #fff9ec;
   }
   footer {
     background-color: #f9be7c;

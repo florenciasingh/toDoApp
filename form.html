@@ -27,8 +27,8 @@
         <h1>My new task:</h1>
 
         <form action="">
-            <input type="text" id="title" name="title" placeholder="Task name">
-            <button class="titleButton"><i class="far fa-plus-square"></i></button>
+            <input type="text" id="titleInput" name="title" placeholder="Task name">
+            <button id="titleButton"class="titleButton"><i class="far fa-plus-square"></i></button>
         </form>
 
         <div class="dropdown">
@@ -47,16 +47,13 @@
         </div>
 
         <form class="desForm" action="">
-            <input type="text" id="description" name="description" placeholder="Task description (optional)">
+            <input type="text" id="descriptionInput" name="description" placeholder="Task description (optional)">
             <button class="desButton"><i class="far fa-plus-square"></i></button>
         </form>
 
-        <button id="addTask">Done</button>
+        <button id="addTaskButton"><a href="list.html">Done</a></button>
 
-        <div class="toDoContainer">
-            <ul class="toDoList">
-            </ul>
-        </div>
+        
     
     </section>
 
