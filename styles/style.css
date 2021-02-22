@@ -35,7 +35,7 @@ body {
     font-size: 200%;
     color: #e46472;
   }
-  .main {
+  section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -53,42 +53,175 @@ body {
     text-align: center;
     background-color: #fff9ec;
   }
-  .main .initialState {
+  section .initialState {
     width: 60%;
   }
-  .main .initialState h1 {
+  section .initialState h1 {
     margin: 0;
     color: #212529;
     letter-spacing: 0;
     font-size: 12vw;
   }
-  .main .initialState i {
+  section .initialState i {
     font-size: 20vw;
     padding: 0.4em;
     color: #212529;
   }
-  .main .addBtn {
-    background-color: #e46472;
-    color: #fff9ec;
+  section .addBtn {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    color: #e46472;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
-    border-radius: 15px;
+    border-radius: 40px;
     padding: 1.5em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .main .addBtn p {
-    font-size: 6vw;
+  section .addBtn p {
+    font-size: 5vw;
     margin: 0;
     font-weight: 300;
   }
-  .main .addBtn i {
-    padding-top: 0.5em;
-    font-size: 10vw;
+  section .addBtn i {
+    padding-top: 0.3em;
+    font-size: 15vw;
+  }
+  section .addBtn a {
+    color: #e46472;
+  }
+  .formSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 20vh;
+  }
+  .formSection h1 {
+    font-size: 2.5rem;
+    line-height: 0;
+    letter-spacing: 0;
+  }
+  .formSection form {
+    padding: 1rem;
+  }
+  .formSection form input {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background: #fff9ec;
+    border: solid 1px #f9be7c;
+    border-radius: 20px;
+  }
+  .formSection form ::-webkit-input-placeholder {
+    color: #e46472;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+  }
+  .formSection form :-ms-input-placeholder {
+    color: #e46472;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+  }
+  .formSection form ::-ms-input-placeholder {
+    color: #e46472;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+  }
+  .formSection form ::placeholder {
+    color: #e46472;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+  }
+  .formSection form button {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: #fff9ec;
+    color: #e46472;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .formSection form #description {
+    padding-bottom: 6rem;
+  }
+  .formSection .dropdown {
+    margin: 1.5rem;
+    position: relative;
+    display: inline-block;
+  }
+  .formSection .dropdown #menu-links {
+    display: none;
+  }
+  .formSection .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .formSection .dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .formSection .dropdown #menu-links:checked ~ #myDropdown {
+    display: block;
+    position: absolute;
+    background-color: #f9be7c;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .formSection .dropdown #menu-links:checked ~ #myDropdown a {
+    color: #fff9ec;
+    padding: 1.5rem 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  .formSection .dropdown .dropbtn {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background: #f9be7c;
+    color: #fff9ec;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .formSection #addTask {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background: #f9be7c;
+    color: #fff9ec;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 0.5rem;
   }
   footer {
     background-color: #f9be7c;
@@ -97,6 +230,7 @@ body {
   }
   footer p {
     line-height: 0;
+    font-weight: 300;
   }
   footer a {
     text-decoration: none;
