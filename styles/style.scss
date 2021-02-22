@@ -159,20 +159,21 @@ body {
 
 
         form {
-            padding: 1rem;
+            padding: 0.5rem;
+            border: solid 1px #f9be7c;
+            border-radius: 20px;         
+
 
             input {
                 padding: 0.5rem;
                 font-size: 1.5rem;
                 background: #fff9ec;
-                border: solid 1px #f9be7c;
-                border-radius: 20px;                
+                border: none;       
             }
 
             ::placeholder {
                 color: #e46472;
                 font-size: 1.2rem;
-                padding-left: 0.5rem;
             }
 
             button {
@@ -185,8 +186,9 @@ body {
                 cursor: pointer;
             }
 
-            #description {
+            #descriptionInput {
                padding-bottom: 6rem; 
+               
             }
 
         }

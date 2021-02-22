@@ -170,34 +170,31 @@ body {
     letter-spacing: 0;
   }
   .formSection form {
-    padding: 1rem;
+    padding: 0.5rem;
+    border: solid 1px #f9be7c;
+    border-radius: 20px;
   }
   .formSection form input {
     padding: 0.5rem;
     font-size: 1.5rem;
     background: #fff9ec;
-    border: solid 1px #f9be7c;
-    border-radius: 20px;
+    border: none;
   }
   .formSection form ::-webkit-input-placeholder {
     color: #e46472;
     font-size: 1.2rem;
-    padding-left: 0.5rem;
   }
   .formSection form :-ms-input-placeholder {
     color: #e46472;
     font-size: 1.2rem;
-    padding-left: 0.5rem;
   }
   .formSection form ::-ms-input-placeholder {
     color: #e46472;
     font-size: 1.2rem;
-    padding-left: 0.5rem;
   }
   .formSection form ::placeholder {
     color: #e46472;
     font-size: 1.2rem;
-    padding-left: 0.5rem;
   }
   .formSection form button {
     padding: 0.5rem;
@@ -209,7 +206,7 @@ body {
     transition: all 0.3s ease;
     cursor: pointer;
   }
-  .formSection form #description {
+  .formSection form #descriptionInput {
     padding-bottom: 6rem;
   }
   .formSection .dropdown {
@@ -265,7 +262,7 @@ body {
     transition: all 0.3s ease;
     cursor: pointer;
   }
-  .formSection #addTask {
+  .formSection #addTaskButton {
     padding: 1rem;
     font-size: 1.5rem;
     border: none;
@@ -277,7 +274,7 @@ body {
     cursor: pointer;
     margin-top: 0.5rem;
   }
-  .formSection #addTask a {
+  .formSection #addTaskButton a {
     text-decoration: none;
     color: #fff9ec;
   }
