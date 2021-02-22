@@ -12,8 +12,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        background-color: #fff9ec;
     }
-
 
     header {
         display: flex;
@@ -31,24 +31,23 @@ body {
 
     }
 
-    section {
+    .main {
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
         width: 100%;
         height: 85vh;
         text-align: center;
-        background-color: #fff9ec;
 
         .initialState {
             width: 60%;
-
+            margin-top: 7vh;
             h1 {
                 margin: 0;
                 color: #212529;
                 letter-spacing: 0;
                 font-size: 12vw;
+                font-weight: 800;
             }
 
             i {
@@ -59,90 +58,78 @@ body {
 
         }
 
-        .addBtn {
-            align-self: flex-end;
-            color: #e46472;
-            width: fit-content;
-            min-height: fit-content;
-            border-radius: 40px;
-            padding: 1.5em;
-            box-sizing: border-box;
-
-
-            p {
-                font-size: 5vw;
-                margin: 0;
-                font-weight: 300;
-            }
-
-            i {
-                padding-top: 0.3em;
-                font-size: 15vw;
-            }
-
-            a {
-                color: #e46472;
-            }
-        }
 
        
     }
 
-    .listContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-        height: 85vh;
+    #chargeButton {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 13vh;
+    right: 9vw;
+    border: 1px solid #fcad26;
+	border-radius: 50%;
+	color: #e46472;
+	background-color: #f9be7c;
+	
+	cursor: pointer;
+	transition: all 0.3s;
+
+    i {
+        font-size: 65px;
         text-align: center;
-        background-color: #fff9ec;
-
-        .list {
-            
-
-            h1 {
-                margin: 0;
-                color: #212529;
-                letter-spacing: 0;
-                font-size: 10vw;
-                padding-left: 5vw;
-                padding-top: 2vh;
-            }
-
-
-        }
-
-        .addBtn {
-            align-self: flex-end;
-            color: #e46472;
-            width: fit-content;
-            min-height: fit-content;
-            border-radius: 40px;
-            padding: 1.5em;
-            box-sizing: border-box;
-
-
-            p {
-                font-size: 5vw;
-                margin: 0;
-                font-weight: 300;
-            }
-
-            i {
-                padding-top: 0.3em;
-                font-size: 15vw;
-            }
-
-            a {
-                color: #e46472;
-            }
-        }
-
+	    text-decoration: none;
+    }
     }
 
-    .formSection {
-        display: flex;
+    #pantallaCarga {
+        margin-top: 10vh;
+        
+        color: #e46472;
+
+        .modal-header {
+            color: #e46472;
+        }
+
+        .modal-dialog {
+            .modal-content {
+
+            border-radius: 30px;
+            background-color: #fff9ec;
+
+            .modal-body {
+                .mb-3 {
+                    .form-control {
+                    background-color: #fff9ec;
+                    border-color: #f9be7c;
+                    border-radius: 30px;
+                    }
+
+                    .form-select {
+                    background-color: #fff9ec;
+                    border-color: #f9be7c;
+                    border-radius: 30px;
+                    color: #999;
+                    }
+                }
+            }
+            }
+        }
+
+        #modalFooter {
+
+            button {
+                background-color: #f9be7c;
+                border: #f9be7c;
+                border-radius: 20px;
+            }
+        }
+    }
+
+
+    #taskForm {
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -274,20 +261,75 @@ body {
         }
     }
 
+    #listedState {
+        display: none;
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 85vh;
+        text-align: center;
+        background-color: #fff9ec;
+
+        
+            
+        .toDoContainer {
+            h1 {
+                margin: 0;
+                color: #212529;
+                letter-spacing: 0;
+                font-size: 10vw;
+                padding-left: 5vw;
+                padding-top: 2vh;
+            }
+
+        }
+        
+
+        .addBtn {
+            align-self: flex-end;
+            color: #e46472;
+            width: fit-content;
+            min-height: fit-content;
+            border-radius: 40px;
+            padding: 1.5em;
+            box-sizing: border-box;
+
+
+            p {
+                font-size: 5vw;
+                margin: 0;
+                font-weight: 300;
+            }
+
+            i {
+                padding-top: 0.3em;
+                font-size: 15vw;
+            }
+
+            a {
+                color: #e46472;
+            }
+        }
+
+    }
+
+    #detailedState {
+        display: none;
+    }
 
     footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: #f9be7c;
         text-align: center;
         height: 5vh;
 
-
-
-
         p {
-            line-height: 0;
+            padding-top: 2vh;
             font-weight: 300;
-
-
         }
 
         a {

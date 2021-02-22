@@ -1,36 +1,37 @@
 // selectors
 let titleInput = document.getElementById('titleInput')
 let descriptionInput = document.getElementById('descriptionInput')
+
 let addTaskButton = document.getElementById('addTaskButton')
-
-let titleButton = document.getElementById('titleButton')
-let descriptionButton = document.getElementById('descriptionButton')
-
 let toDoList = document.getElementById('toDoList')
 
-// event listeners
-
-addTask.addEventListener('click', addToDo)
-
 // functions
-
-function addToDo(event) {
-    event.preventDefault()
+function addToDo() {
+    
     //todo DIV
-    const toDoDiv = document.createElement('div')
+    let toDoDiv = document.createElement('div')
     toDoDiv.classList.add('toDo')
-    // create li
-    const newToDo = document.createElement('li')
-    newToDo.innerText = 'hey'
-    newToDo.classList.add('toDoItem')
-    toDoDiv.appendChild(newToDo)
+    // create li 
+    let toDoLi = document.createElement('li')
+    toDoLi.classList.add('toDoLi')
+    toDoDiv.appendChild(toDoLi)
+    // create title
+    let toDoTitle = document.createElement('p')
+    toDoTitle.classList.add('toDoTitle')
+    toDoTitle.textContent = titleInput.value
+    toDoLi.appendChild(toDoTitle)
+    // create description 
+    let toDoDescription = document.createElement('p')
+    toDoDescription.classList.add ('toDoDescription')
+    toDoDescription.textContent = descriptionInput.value
+    toDoDiv.appendChild(toDoDescription)
     // check mark button
-    const completedButton = document.createElement('button')
+    let completedButton = document.createElement('button')
     completedButton.innerHTML = '<i class="fas fa-check"></i>'
     completedButton.classList.add('completedButton')
     toDoDiv.appendChild(completedButton)
     // pop-up details
-    const detailsButton = document.createElement('button')
+    let detailsButton = document.createElement('button')
     detailsButton.innerHTML = '<i class="fas fa-chevron-double-right"></i>'
     detailsButton.classList.add('detailsButton')
     toDoDiv.appendChild(detailsButton)
@@ -38,6 +39,6 @@ function addToDo(event) {
     toDoList.appendChild(toDoDiv)
 }
 
-
-// new Task new Object?
+// event listeners
+addTaskButton.addEventListener('click', addToDo())
 
